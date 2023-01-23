@@ -2,16 +2,16 @@ let settingsView;
 let gameView;
 let scoreView;
 let current;
+let Spielmodus;
 
 window.onload = function() {
 
-    // grab HTML elements
     settingsView = document.getElementById("settings-view");
     gameView = document.getElementById("game-view");
     scoreView = document.getElementById("score-view");
+    Spielmodus = document.getElementById("Spielmodus");
 
-    // (un-)comment to hide/show game-view and score-view initially
-    switchView("settings-view");
+    switchView("Spielmodus");
 };
 
 function switchView(targetViewId) {
@@ -19,11 +19,29 @@ function switchView(targetViewId) {
     gameView.style.display = "none";
     scoreView.style.display = "none";
 
-    if (targetViewId === "settings-view") {
-        settingsView.style.display = "block";
-        initSettings();
-    } else if (targetViewId === "game-view") {
+    if (targetViewId === "Spielmodus"){
+        Spielmodus.style.display === "block";
+    }else if (targetViewId === "settings-view") {
+        settingsView.style.display = "initial";
+        Spielmodus.style.display = "none";
+    }else if (targetViewId === "game-view") {
         gameView.style.display = "initial";
+        Spielmodus.style.display = "none";
+    }
+}
+
+function selectGamemode(gamemode){
+    if(gamemode=='Normal'){
+        let hunderter = document.createTextNode("100");
+        let zweihunderter = document.createTextNode("200");
+        let dreihunderter = document.createTextNode("300");
+        let vierhunderter = document.createTextNode("400");
+        let fünfhunderter = document.createTextNode("500");
+        let hunderterText = document.createElement("p");
+        let hText = hunderterText.appendChild(hunderter)
+        document.getElementById("Box11").appendChild(hText);
+    }else{
+
     }
 }
 

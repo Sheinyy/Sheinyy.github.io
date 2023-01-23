@@ -7,12 +7,19 @@
     </head>
     <body>
         <div id="game-window">
+            <div id="Spielmodus">
+                <h1> Spielmodus aussuchen</h1>
+                <div id="Spielmodi">
+                    <div id="Kategorie" onclick="switchView('settings-view'),selectGamemode('Normal')"><p>Normale Punkte</p></div>
+                    <div id="Kategorie" onclick="switchView('settings-view'),selectGamemode('Doppelt')"><p>Doppelte Punkte</p></div>
+                </div>
+            </div>
             <div id="settings-view">
                 <h1>Jeopardy</h1>
                 <div id="Fragen">
                     <div id="first">
                         <div id="Kategorie"><p>Gaming</p></div>
-                        <div id="Box11" onclick="selectQuestion('q11')"><p>100</p></div>
+                        <div id="Box11" onclick="selectQuestion('q11')"></div>
                         <div id="Box12" onclick="selectQuestion('q12')"><p>200</p></div>
                         <div id="Box13" onclick="selectQuestion('q13')"><p>300</p></div>
                         <div id="Box14" onclick="selectQuestion('q14')"><p>400</p></div>
