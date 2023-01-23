@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Test
-    </title>
-</head>
-<body>
-    <p> Test Website </p>
-    <button onclick="Testfun()"> Drück auf mich </button>
-    <div id="Test"></div>
-</body>
-<script src="js/index.js"></script>
+<html>
+    <head>
+        <title>Jeopardy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/settings.css">
+    </head>
+    <body>
+        <div id="game-window">
+            <div id="settings-view">
+                <h1>Jeopardy</h1>
+                <div id="Fragen">
+                    <div id="first">
+                        <div id="Kategorie"><p>Gaming</p></div>
+                        <div id="Box11" onclick="selectQuestion('q11')"><p>100</p></div>
+                        <div id="Box12" onclick="selectQuestion('q12')"><p>200</p></div>
+                        <div id="Box13" onclick="selectQuestion('q13')"><p>300</p></div>
+                        <div id="Box14" onclick="selectQuestion('q14')"><p>400</p></div>
+                        <div id="Box15" onclick="selectQuestion('q15')"><p>500</p></div>
+                    </div>
+                    <div id="second">
+                        <div id="Kategorie"><p>Essen</p></div>
+                        <div id="Box21" onclick="selectQuestion('q21')"><p>100</p></div>
+                        <div id="Box22" onclick="selectQuestion('q22')"><p>200</p></div>
+                        <div id="Box23" onclick="selectQuestion('q23')"><p>300</p></div>
+                        <div id="Box24" onclick="selectQuestion('q24')"><p>400</p></div>
+                        <div id="Box25" onclick="selectQuestion('q25')"><p>500</p></div>
+                    </div>
+                    <div id="third">
+                        <div id="Kategorie"><p>Twitch</p></div>
+                        <div id="Box31" onclick="selectQuestion('q31')"><p>100</p></div>
+                        <div id="Box32" onclick="selectQuestion('q32')"><p>200</p></div>
+                        <div id="Box33" onclick="selectQuestion('q33')"><p>300</p></div>
+                        <div id="Box34" onclick="selectQuestion('q34')"><p>400</p></div>
+                        <div id="Box35" onclick="selectQuestion('q35')"><p>500</p></div>
+                    </div>
+                    <div id="fourth">
+                        <div id="Kategorie"><p>Spaß mit Flaggen</p></div>
+                        <div id="Box41" onclick="selectQuestion('q41')"><p>100</p></div>
+                        <div id="Box42" onclick="selectQuestion('q42')"><p>200</p></div>
+                        <div id="Box43" onclick="selectQuestion('q43')"><p>300</p></div>
+                        <div id="Box44" onclick="selectQuestion('q44')"><p>400</p></div>
+                        <div id="Box45" onclick="selectQuestion('q45')"><p>500</p></div>
+                    </div>
+                    <div id="fifth">
+                        <div id="Kategorie"><p>Reagieren</p></div>
+                        <div id="Box51" onclick="selectQuestion('q51')"><p>100</p></div>
+                        <div id="Box52" onclick="selectQuestion('q52')"><p>200</p></div>
+                        <div id="Box53" onclick="selectQuestion('q53')"><p>300</p></div>
+                        <div id="Box54" onclick="selectQuestion('q54')"><p>400</p></div>
+                        <div id="Box55" onclick="selectQuestion('q55')"><p>500</p></div>
+                    </div>
+                </div>
+            </div>
+            <div id="game-view">
+                <h1>Jeopardy</h1>
+                <div id="Fragebox"></div> 
+                <div id="Next" onclick="ShowAnswer()">Antwort</div>
+                <div id="Next" onclick="switchView('settings-view')">Nächste</div>
+            </div>   
+            <div id="score-view">
+            </div>
+        </div>
+        <script src="js/config.js"></script>
+        <script src="js/index.js"></script>
+    </body>
 </html>

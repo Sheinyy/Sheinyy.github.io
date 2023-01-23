@@ -1,0 +1,76 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,9,121,1) 27%, rgba(0,166,255,1) 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+#Fragen{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+#Kategorie{
+    border: solid black 3px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: larger;
+    font-family: fantasy;
+    min-width: 75px;
+    width: 150px;
+}
+
+#Box11,#Box12,#Box13,#Box14,#Box15,#Box21,#Box22,#Box23,#Box24,#Box25,#Box31,#Box32,#Box33,#Box34,#Box35,#Box41,#Box42,#Box43,#Box44,#Box45,#Box51,#Box52,#Box53,#Box54,#Box55{
+    border: solid black 3px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: larger;
+    font-family: fantasy;
+    min-width: 75px;
+}
+
+#Kategorie{
+    margin-bottom : 80px;
+}
+
+p{
+    margin: 7px;
+}
+
+.game-view{
+    display: flex;
+    gap: 10px;
+}
+
+#Fragebox,#Next{
+    display: block;
+    border: solid black 3px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    width : 80%;
+    margin-top: 125px;
+    font-size: 50px;
+}
+
+#Next{
+    display: relative;
+    cursor: pointer;
+    width: 120px;
+    margin-top: 20px;
+    font-size: large;
+}
